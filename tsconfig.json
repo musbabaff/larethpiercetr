@@ -40,6 +40,8 @@
   ],
   "exclude": [
     "node_modules",
-    "public/service-worker.js" 
+    "public/*.js",            // Bu satır tüm ana public JS dosyalarını dışlar
+    "public/sw.js",           // Varsa bunu da ekleyelim
+    "public/workbox-*.js"
   ]
 }
